@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h1><code>{{ page.title }}</code></h2>
+
+{% if page.categories %}
+  {% if page.categories.size > 1 %}
+    {% assign category = page.categories | first %}
+    Categories: <em>{{ category}} procedures</em>
+    {% assign stuff = page.categories | slice: 1 %}
+    {% for category in stuff %}
+      , <em>{{ category }} procedures</em>
+    {% endfor %}
+  {% elsif page.categories.size == 1 %}
+    Category: <em>{{ page.categories }} procedures</em>
+  {% endif %}
+{% endif %}
+
+{{ content | process_image_in_pre }}
+</pre>

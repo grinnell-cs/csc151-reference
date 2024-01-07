@@ -1,0 +1,52 @@
+#!/usr/local/bin/perl
+
+# summarize-proc infile
+#   Reads one of the standard procedure files and produces a summary.
+
+my $filename = $ARGV[0];
+open(my $INFILE, "<", $filename) or die "Could not find file '$filename'";
+
+# Make a link to the file
+my $link = $filename;
+$link =~ s/^_//;
+$link =~ s/^/..\//;
+$link =~ s/.md$/.html/;
+
+# Print the header
+my $line = <$INFILE>;
+print $line;
+while (($line = <$INFILE>) && ($line ne "---\n")) {
+  print $line;
+}
+print "link: $link\n";
+
+# Get the signature
+while (($line = <$INFILE>) && ($line !~ m/^;;;/)) { }
+my $sig = $line;
+$sig =~ s/ ->.*//;
+$sig =~ s/ :.*//;
+$sig =~ s/^;;; *//;
+if ($sig =~ m/\(([^ ]*) (.*)\)/) {
+  print "proc: $1\n";
+  print "params: $2\n";
+} elsif ($sig =~ m/\(([^ ]*)\)/) {
+  print "proc: $1\n";
+} else {
+  print "constant: $sig\n";
+}
+
+# Get the documentation
+my $docs = "";
+while (($line = <$INFILE>) && ($line =~ m/^;;;   /)) { }
+do {
+  my $doc = $line;
+  chomp($doc);
+  $doc =~ s/^;;; //;
+  $docs .= "  $doc\n";
+} while (($line = <$INFILE>) && ($line =~ m/^;;; [^ ]/));
+
+print "docs: |\n$docs";
+
+# And we're done
+print "---\n";
+close($INFILE);

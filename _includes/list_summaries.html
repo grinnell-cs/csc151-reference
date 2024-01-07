@@ -1,0 +1,50 @@
+{% comment %}
+Include this file to list a set of summaries.
+
+\param  procs    A list of summaries
+\param  category The category (use the empty string for all procedures)
+
+Examples:
+{% endcomment %}
+
+{% assign section = "" %}
+
+{% for proc in include.procs %}
+  {% assign relevant = false %}
+  {% if include.category == "" %}
+    {% assign relevant = true %}
+  {% else %}
+    {% for category in proc.categories %}
+      {% if category == include.category %}
+        {% assign relevant = true %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if relevant %}
+    {% if proc.proc %}
+      {% assign word = proc.proc %}
+    {% elsif proc.constant  %}
+      {% assign word = proc.constant %}
+    {% else %}
+      {% assign word = "PROBLEM" %}
+    {% endif %}
+    {% assign letter = word | slice: 0 %}
+    {% assign letter = letter | capitalize %}
+  
+    {% if letter == section %}
+    {% else %}
+      {% assign section = letter %}
+## {{ letter }}
+    {% endif %}
+  
+    {% if proc.proc %}
+      {% if proc.params %}
+<a href="{{ proc.link }}"><code>(<strong>{{ proc.proc }}</strong> {{ proc.params }})</code></a> --- {{ proc.docs }} 
+      {% else %}
+      {% endif %}
+    {% elsif proc.constant %}
+    {% else %}
+      HELP
+    {% endif %}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,102 @@
+# Jekyll Site settings
+
+# Course title
+title: CSC-151 References
+
+# baseurl is used for redirects on the same server.
+# url is the full path name
+baseurl: /Courses/CSC151/Reference
+url: https://rebelsky.cs.grinnell.edu/Courses/CSC151/Reference/
+
+# Set the theme color. Options are blue, green, red, orange, purple, and gray
+color: bloo
+
+copyright: |
+  Copyright &copy; 2024 Samuel A. Rebelsky 
+
+copyright_message: |
+  Unless specified otherwise elsewhere on this page, this work is
+  licensed under a Creative Commons Attribution 3.0 Unported License.
+  To view a copy of this license, visit
+  <http://creativecommons.org/licenses/by-nc/3.0/> or send a letter
+  to Creative Commons, 543 Howard Street, 5th Floor, San Francisco,
+  California, 94105, USA.
+
+# Be picky about front-matter
+strict_front_matter: true
+
+# Set up collections for course content
+collections:
+  admin:
+    output: false
+
+  categories:
+    output: true
+
+  procs:
+    output: true
+
+  sandbox:
+    output: true
+    permalink: /sandbox/:path.html
+
+  summaries:
+    output: false
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+ 
+  - scope:
+      path: ""
+      type: procs
+    values:
+      layout: procedure
+
+  - scope:
+      path: ""
+      type: assignments
+    values:
+      link: false
+      layout: assigned
+      collaboration: |
+        You must work individually on this assignment.
+        You may only discuss this assignment with the course staff.
+
+
+# Build settings
+exclude:
+  - admin
+  - Gemfile
+  - Gemfile.lock
+  - INSTRUCTOR.md
+  - LICENSE
+  - Makefile
+  - README.md
+  - bin
+  - tasks
+  - vault
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    default_lang: drracket
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+
+# Plugin Settings
+plugins:
+  - jekyll-bootstrap-sass
+  - jekyll-include-cache
+
+bootstrap:
+  assets: true
