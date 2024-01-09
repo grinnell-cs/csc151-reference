@@ -36,6 +36,14 @@ categories:
   given: 0
 ```
 
+## Sample implementation
+
+```
+(define random-n
+  (lambda (n)
+    (inexact->exact (floor (* n (random))))))
+```
+
 ## Tests
 
 _Forthcoming_
