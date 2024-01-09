@@ -38,10 +38,7 @@ Examples:
     {% endif %}
   
     {% if proc.proc %}
-      {% if proc.params %}
-<a href="{{ proc.link }}"><code>(<strong>{{ proc.proc }}</strong> {{ proc.params }})</code></a> --- {{ proc.docs }} 
-      {% else %}
-      {% endif %}
+<a href="{{ proc.link }}"><code>(<strong>{{ proc.proc }}</strong>{% if proc.params %} {{ proc.params }}{% endif %})</code></a>{% if proc.deprecated %}<font style="color:red;"><em>deprecated</em> </font>{% endif %}--- {{ proc.docs }}
     {% elsif proc.constant %}
     {% else %}
       HELP
