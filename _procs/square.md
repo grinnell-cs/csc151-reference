@@ -3,7 +3,9 @@ title: square
 categories:
   - Image
   - 2htdp
+  - Deprecated
 preimg: true
+deprecated: true
 ---
 ## Documentation
 
