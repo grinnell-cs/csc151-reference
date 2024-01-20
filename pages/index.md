@@ -1,5 +1,5 @@
 ---
-permalink: /home
+permalink: /home/
 ---
 CSC-151 reference
 =================
