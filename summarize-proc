@@ -9,7 +9,6 @@ open(my $INFILE, "<", $filename) or die "Could not find file '$filename'";
 # Make a link to the file
 my $link = $filename;
 $link =~ s/^_//;
-$link =~ s/^/..\//;
 $link =~ s/.md$/.html/;
 
 # Print the header

@@ -3,7 +3,7 @@ title: negate?
 categories: 
   - Type
   - Higher-order
-link: ../procs/negate.html
+link: procs/negate.html
 proc: negate?
 params: proc
 docs: |

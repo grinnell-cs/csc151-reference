@@ -11,6 +11,8 @@ url: https://rebelsky.cs.grinnell.edu/Courses/CSC151/Reference/
 # Set the theme color. Options are blue, green, red, orange, purple, and gray
 color: bloo
 
+reference: ../
+
 copyright: |
   Copyright &copy; 2024 Samuel A. Rebelsky 
 

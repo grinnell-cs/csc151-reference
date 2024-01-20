@@ -2,7 +2,7 @@
 title: car
 categories: 
   - List
-link: ../procs/car.html
+link: procs/car.html
 proc: car
 params: lst
 docs: |

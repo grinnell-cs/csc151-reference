@@ -2,7 +2,7 @@
 title: rgb-red
 categories: 
   - Color
-link: ../procs/rgb-red.html
+link: procs/rgb-red.html
 proc: rgb-red
 params: rgb-color
 docs: |

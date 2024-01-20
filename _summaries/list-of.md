@@ -2,7 +2,7 @@
 title: list-of
 categories: 
   - Type
-link: ../procs/list-of.html
+link: procs/list-of.html
 proc: list-of
 params: pred?
 docs: |

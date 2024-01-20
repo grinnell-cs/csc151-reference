@@ -2,7 +2,7 @@
 title: list-ref
 categories: 
   - List
-link: ../procs/list-ref.html
+link: procs/list-ref.html
 proc: list-ref
 params: lst pos
 docs: |

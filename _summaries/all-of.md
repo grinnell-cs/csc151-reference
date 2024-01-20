@@ -2,7 +2,7 @@
 title: all-of
 categories: 
   - Type
-link: ../procs/all-of.html
+link: procs/all-of.html
 proc: all-of
 params: pred_1? ... pred_n?
 docs: |

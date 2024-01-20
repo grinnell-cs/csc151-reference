@@ -2,7 +2,7 @@
 title: random (one-parameter)
 categories: 
   - Random
-link: ../procs/random-1.html
+link: procs/random-1.html
 proc: random
 params: n
 docs: |

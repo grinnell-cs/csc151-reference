@@ -2,7 +2,7 @@
 title: random (two-parameter)
 categories: 
   - Random
-link: ../procs/random-2.html
+link: procs/random-2.html
 proc: random
 params: lb ub
 docs: |

@@ -2,7 +2,7 @@
 title: any-of
 categories: 
   - Type
-link: ../procs/any-of.html
+link: procs/any-of.html
 proc: any-of
 params: pred_1? ... pred_n?
 docs: |

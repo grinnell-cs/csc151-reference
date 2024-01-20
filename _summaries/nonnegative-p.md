@@ -2,7 +2,7 @@
 title: nonnegative?
 categories: 
   - Type
-link: ../procs/nonnegative-p.html
+link: procs/nonnegative-p.html
 proc: nonnegative?
 params: val
 docs: |

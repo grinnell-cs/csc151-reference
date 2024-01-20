@@ -2,7 +2,7 @@
 title: vector-of
 categories: 
   - Type
-link: ../procs/vector-of.html
+link: procs/vector-of.html
 proc: vector-of
 params: pred?
 docs: |
