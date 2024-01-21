@@ -3,9 +3,15 @@ Include this file to list a set of summaries.
 
 \param  procs    A list of summaries
 \param  category The category (use the empty string for all procedures)
+\param  sect     The section prefix used for letters such a ##
 
 Examples:
 {% endcomment %}
+
+{% assign sect = include.sect | append: "" %}
+{% if sect == "" %}
+  {% assign sect = "##" %}
+{% endif %}
 
 {% assign section = "" %}
 
@@ -34,7 +40,7 @@ Examples:
     {% if letter == section %}
     {% else %}
       {% assign section = letter %}
-## {{ letter }}
+{{ sect }} {{ letter }}
     {% endif %}
   
     {% if proc.proc %}
