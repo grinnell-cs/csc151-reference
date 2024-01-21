@@ -1,6 +1,6 @@
 ---
 title: All procedures
-permalink: /all/
+permalink: /procs/
 ---
 # All procedures
 
