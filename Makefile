@@ -24,7 +24,7 @@ summaries := $(procs:_procs/%=_summaries/%)
 
 summaries: _summaries/*.md
 
-make-summaries: $(summaries)
+newsum: $(summaries)
 
 _summaries/%.md: _procs/%.md summarize-proc
 	./summarize-proc $^ > $@
