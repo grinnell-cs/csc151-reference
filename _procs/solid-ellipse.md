@@ -4,6 +4,7 @@ categories:
   - Image
   - Shape
   - Ellipse
+preimg: true
 ---
 ## Documentation
 
@@ -13,7 +14,7 @@ categories:
 ;;;   height : nonnegative-real?
 ;;;   color : color?
 ;;;   description : string?
-;;; A `width`-by-`height` ellipse whose color is `color`.
+;;; Create a `width`-by-`height` ellipse whose color is `color`.
 ```
 
 ## Examples

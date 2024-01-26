@@ -4,6 +4,7 @@ categories:
   - Image
   - Circle
   - Shape
+preimg: true
 link: procs/solid-circle.html
 proc: solid-circle
 params: diameter color [description]

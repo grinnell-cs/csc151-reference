@@ -15,6 +15,8 @@ categories:
 
 ## Examples
 
+_Forthcoming_
+
 ## Sample implementation (_advanced_)
 
 ```
@@ -23,3 +25,14 @@ categories:
     vals))
 ```
 
+## Tests
+
+_Forthcoming_
+
+## See also
+
+_Forthcoming_
+
+## Questions
+
+_Forthcoming_

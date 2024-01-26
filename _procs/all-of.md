@@ -54,3 +54,15 @@ categories:
       (lambda (val)
         (kernel preds val)))))
 ```
+
+## Tests
+
+_Forthcoming_
+
+## See also
+
+_Forthcoming_
+
+## Questions
+
+_Forthcoming_

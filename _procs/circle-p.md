@@ -4,7 +4,6 @@ categories:
   - Image
   - Shape
   - Circle
-  - Foo
 ---
 ## Documentation
 
@@ -38,6 +37,7 @@ _Forthcoming_
 
 ## See also
 
+[`ellipse?`](../procs/ellipse-p),
 [`outlined-circle`](../procs/solid-circle),
 [`solid-circle`](../procs/solid-circle)
 

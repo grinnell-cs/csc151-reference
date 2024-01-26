@@ -4,6 +4,7 @@ categories:
   - Image
   - Circle
   - Shape
+preimg: true
 ---
 ## Documentation
 

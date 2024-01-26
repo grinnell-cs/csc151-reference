@@ -2,6 +2,9 @@
 title: "square?"
 categories:
   - Image
+  - Polygon
+  - Rectangle
+  - Square
 ---
 ```
 ;;; (square? img) -> boolean?
@@ -20,3 +23,14 @@ categories:
 #t
 ```
 
+## Tests
+
+_Forthcoming_
+
+## See also
+
+_Forthcoming_
+
+## Questions
+
+_Forthcoming_

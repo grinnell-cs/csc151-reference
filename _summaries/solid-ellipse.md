@@ -4,9 +4,10 @@ categories:
   - Image
   - Shape
   - Ellipse
+preimg: true
 link: procs/solid-ellipse.html
 proc: solid-ellipse
 params: width height color [description]
 docs: |
-  A `width`-by-`height` ellipse whose color is `color`.
+  Create a `width`-by-`height` ellipse whose color is `color`.
 ---
