@@ -6,17 +6,16 @@ categories:
 ## Documentation
 
 ```
-;;; (place img hoff voff scene [description]) -> image?
+;;; (place img xside x yside y bg) -> image?
 ;;;   img : image?
-;;;   xoff : real?
-;;;   yoff : real?
-;;    scene : image?
+;;;   xside : (one-of "left" "center" "right")
+;;;   x : real?
+;;;   yside : (one-of "top" "center" "bottom")
+;;;   y : real?
+;;;   bg : image?
 ;;;   description : string?
-;;; Place `img` on top of `scene`, shifting it horizontally by
-;;; `hoff` and vertically by `voff`. The resulting image is cropped
-;;; to the boundaries of `scene`.
-;;;
-;;; Note: Not yet implemented.
+;;; Place `img` on `bg`, with the `xside` of `img` at `x` and the
+;;; `yside` of `img` at `y`. Crop the result at the edges of `bg`.
 ```
 
 ## Examples

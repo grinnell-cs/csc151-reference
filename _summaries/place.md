@@ -4,7 +4,8 @@ categories:
   - Image
 link: procs/place.html
 proc: place
-params: img hoff voff scene [description]
+params: img xside x yside y bg
 docs: |
-  ;;    scene : image?
+  Place `img` on `bg`, with the `xside` of `img` at `x` and the
+  `yside` of `img` at `y`. Crop the result at the edges of `bg`.
 ---
