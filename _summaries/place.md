@@ -2,6 +2,7 @@
 title: place
 categories: 
   - Image
+preimg: true
 link: procs/place.html
 proc: place
 params: img xside x yside y bg
