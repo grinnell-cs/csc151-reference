@@ -12,7 +12,12 @@ source "https://rubygems.org"
 # 3.8.5 is bonked in a way that affects me https://github.com/jekyll/jekyll/issues/7380.
 # ... but 4.0 seems to have fixed it!
 
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.3.3"
+
+# A few gems that will be removed from core Ruby as of 3.4.0
+gem "csv"               # Used by Jekyll
+gem "base64"            # Used by safe_yaml
+gem "bigdecimal"        # Used by liquid
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
