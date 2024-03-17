@@ -13,16 +13,14 @@ categories:
 ;;;   description : string?
 ;;; Create a new image by rotating `img` by `angle` degrees
 ;;; counter-clockwise.
+;;;
+;;; Note that this procedure may trim some of the transparent
+;;; parts of an image after rotating.
 ```
 
 ## Examples
 
 _Forthcoming_
-
-## Sample implementation (_advanced_)
-
-```
-```
 
 ## Tests
 
