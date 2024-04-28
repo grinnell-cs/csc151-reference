@@ -2,6 +2,7 @@
 title: "curve"
 categories: 
   - Image
+preimg: true
 link: procs/curve.html
 proc: curve
 params: source source-angle source-pull target target-angle target-pull color line-width [description]
