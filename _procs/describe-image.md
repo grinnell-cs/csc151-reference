@@ -14,6 +14,7 @@ categories:
 ## Examples
 
 ```
+> (define d1 (solid-circle 25 "blue"))
 > (describe-image d1)
 "a solid blue circle with diameter 25"
 > (define d2 (redescribe d1 "a blue disc"))
