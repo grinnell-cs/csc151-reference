@@ -5,7 +5,7 @@ categories:
 preimg: true
 link: procs/filled-curve.html
 proc: filled-curve
-params: source source-angle source-pull target target-angle target-pull color [description]
+params: "source source-angle source-pull target target-angle target-pull color [description]"
 docs: |
   Create a "filled" curve from `source` to `target`. The curve 
   leaves `source` at the specified angle and enters `target` from 

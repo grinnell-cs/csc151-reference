@@ -6,7 +6,7 @@ categories:
 preimg: true
 link: procs/image-subtract.html
 proc: image-subtract
-params: img1 img2 [description]
+params: "img1 img2 [description]"
 docs: |
   "Subtract" `img2` from `img1`, decreasing the opacity of each
   pixel in `img1` by the opacity of the corresponding pixel in

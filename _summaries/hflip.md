@@ -5,7 +5,7 @@ categories:
   - Image transformation
 link: procs/hflip.html
 proc: hflip
-params: img [description]
+params: "img [description]"
 docs: |
   Flip `img` horizontally.
 ---

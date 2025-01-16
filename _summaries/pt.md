@@ -5,7 +5,7 @@ categories:
   - Image
 link: procs/pt.html
 proc: pt
-params: x y
+params: "x y"
 docs: |
   Make a point.
 ---

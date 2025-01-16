@@ -4,7 +4,7 @@ categories:
   - Color
 link: procs/rgb-greyscale..html
 proc: rgb-greyscale
-params: c
+params: "c"
 docs: |
   Convert `c` to greyscale (or approximately greyscale).
 ---

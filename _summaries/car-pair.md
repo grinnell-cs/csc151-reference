@@ -4,7 +4,7 @@ categories:
   - Pair
 link: procs/car-pair.html
 proc: car
-params: pair
+params: "pair"
 docs: |
   Grabs the first element of the pair.
 ---

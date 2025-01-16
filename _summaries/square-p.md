@@ -7,7 +7,7 @@ categories:
   - Square
 link: procs/square-p.html
 proc: square?
-params: img
+params: "img"
 docs: |
   Determines if `img` is a square (solid or outlined).
 ---

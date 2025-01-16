@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/opt/homebrew/bin/perl
 
 # summarize-proc infile
 #   Reads one of the standard procedure files and produces a summary.
@@ -27,7 +27,7 @@ $sig =~ s/ :.*//;
 $sig =~ s/^;;; *//;
 if ($sig =~ m/\(([^ ]*) (.*)\)/) {
   print "proc: $1\n";
-  print "params: $2\n";
+  print "params: \"$2\"\n";
 } elsif ($sig =~ m/\(([^ ]*)\)/) {
   print "proc: $1\n";
 } else {

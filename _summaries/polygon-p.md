@@ -4,7 +4,7 @@ categories:
   - Image
 link: procs/polygon-p.html
 proc: polygon?
-params: img
+params: "img"
 docs: |
   Determines whether `img` is a polygon.
 ---

@@ -4,7 +4,7 @@ categories:
   - List
 link: procs/car.html
 proc: car
-params: lst
+params: "lst"
 docs: |
   Grabs the first element of `lst`.
 ---

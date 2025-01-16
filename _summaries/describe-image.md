@@ -4,7 +4,7 @@ categories:
   - Image
 link: procs/describe-image.html
 proc: describe-image
-params: img
+params: "img"
 docs: |
   Get the description of the image.
 ---

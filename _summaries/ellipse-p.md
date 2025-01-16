@@ -5,7 +5,7 @@ categories:
   - Ellipse
 link: procs/ellipse-p.html
 proc: ellipse?
-params: img
+params: "img"
 docs: |
   Determine if an image is an ellipse.
 ---
