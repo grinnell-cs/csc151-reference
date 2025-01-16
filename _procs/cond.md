@@ -18,7 +18,7 @@ categories:
 ;;;   alt0 : expression?
 ;;;   alt1 : expression?
 ;;;   ...
-;;;;  altn : expression
+;;;   altn : expression
 ;;; Evaluate each guard in turn until one holds (is not false). Then evaluate 
 ;;; each of the corresponding expressions. Return the value of the last
 ;;; corresponding expression.  If none of the guards holds, evaluate each

@@ -8,7 +8,7 @@ categories:
 ## Documentation
 
 ```
-;;; (solid-rectangle width height color [desc]) -> image?
+;;; (solid-rectangle width height color [description]) -> image?
 ;;;   width : nonnegative-real?
 ;;;   height : nonnegative-real?
 ;;;   color : color?
