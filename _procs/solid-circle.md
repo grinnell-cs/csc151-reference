@@ -18,7 +18,18 @@ preimg: true
 
 ## Examples
 
-_Forthcoming_
+```
+> (solid-circle 30 "blue")
+![a solid blue circle with diameter 30](../images/solid-circle/solid-blue-circle-30.png)
+> (solid-circle 40 "red")
+![a solid red circle with diameter 40](../images/solid-circle/solid-red-circle-40.png)
+> (beside (solid-circle 10 "purple")
+          (solid-circle 15 "purple")
+          (solid-circle 20 "purple")
+          (solid-circle 25 "purple")
+          (solid-circle 30 "purple"))
+![a center-aligned sequence of images (a solid purple circle with diameter 10 beside a solid purple circle with diameter 15 beside a solid purple circle with diameter 20 beside a solid purple circle with diameter 25 beside a solid purple circle with diameter 30)](../images/solid-circle/image001.png)
+```
 
 ## Sample implementation (_advanced_)
 
