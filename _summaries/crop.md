@@ -3,6 +3,7 @@ title: crop
 categories: 
   - Image
   - Image transformation
+preimg: true
 link: procs/crop.html
 proc: crop
 params: "img left top width height [description]"

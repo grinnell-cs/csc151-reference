@@ -3,6 +3,7 @@ title: crop
 categories: 
   - Image
   - Image transformation
+preimg: true
 ---
 ## Documentation
 
